@@ -1,0 +1,161 @@
+/*
+Preston Luie
+Preston_luie@student.uml.edu
+01971155
+*/
+
+/*make sure that the tiles are of the same size and have same positionings*/
+#oneLineBoardHolder,
+#emptyTileRack {
+    position: relative;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+}
+
+/*Makes sure that the board is the right size and is at the correct location on the screen*/
+#startingBoard {
+    display: block;
+    width: 900px;
+    height: auto;
+}
+
+/*Positions the rack image and gives space on top for better visibiilty*/
+#blankRack {
+    padding-top: 10%;
+    z-index: 0;
+    position: absolute;
+}
+
+
+/*Makes sure that tile placeholders are on the correct position overlayed ontop of the board at all times these are used to track the postion and tally points*/
+#boardTileHolder {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: 1fr;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    visibility: hidden;
+}
+
+/*Makes all scrabbleBoard tiles be of an appropriate size so that the tiles can be tracked properly*/
+.scrabbleBoard {
+    width: 60px;
+}
+
+
+/*This is where the players pieces are held keep everything the same besides the positioning of the rack so that the tiles on the board
+as well as the tiles on the rack are of the same size and can be placed on the board nicely
+*/
+#gridForRackAndPlayer {
+    margin-top: 18%;
+    margin-left: 5%;
+    padding-left: 4%;
+    column-gap: 4%;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: 1fr;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 60px;
+    z-index: 1;
+    border: 3px dotted tan;
+}
+
+
+/*Size for the draggable (user tile pieces) sligtly smaller so it appears better on the board better and so that the tiles can be tracked (slightly easier
+to track as it has to be more precise*/
+.draggable {
+    width: 50px;
+}
+
+
+
+
+/*Sets up all the tiles for the board as well as the rack*/
+#normal1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#normal2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#doubleWord3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#normal4 {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+#normal5 {
+    grid-column: 5;
+    grid-row: 1;
+}
+
+#normal6 {
+    grid-column: 6;
+    grid-row: 1;
+}
+
+#doubleLetter7 {
+    grid-column: 7;
+    grid-row: 1;
+}
+
+#normal8 {
+    grid-column: 8;
+    grid-row: 1;
+}
+
+#doubleLetter9 {
+    grid-column: 9;
+    grid-row: 1;
+}
+
+#normal10 {
+    grid-column: 10;
+    grid-row: 1;
+}
+
+#normal11 {
+    grid-column: 11;
+    grid-row: 1;
+}
+
+#normal12 {
+    grid-column: 12;
+    grid-row: 1;
+}
+
+#doubleWord13 {
+    grid-column: 13;
+    grid-row: 1;
+}
+
+#normal14 {
+    grid-column: 14;
+    grid-row: 1;
+}
+
+#normal15 {
+    grid-column: 15;
+    grid-row: 1;
+}
+
+#restartButton,
+#nextButton {
+    z-index: 10;
+}

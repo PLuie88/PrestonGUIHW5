@@ -1,0 +1,71 @@
+<!--
+Preston Luie
+Preston_luie@student.uml.edu
+01971155
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="stylesheet" href="./style.css" />
+  <meta charset="utf-8">
+  <title>One bar Scrabble</title>
+</head>
+
+<body>
+  <div id="content">
+    <div id="scoresDiv">
+      <div id="buttons">
+        <button id="restartButton" type="button">Restart / New Game</button>
+        <button id="nextButton" type="button">Next</button>
+      </div>
+      <p id="totalScore"> Running Total Score: 0</p>
+    </div>
+    <div id="oneLineBoardHolder">
+      <img id="startingBoard" src="Scrabble_Board_OneLine.png" alt="oneRowBoard"">
+      <div id="boardTileHolder"> <!--Init the entire board with holders using blank tile-->
+        <img id="normal1" src="./alltiles/Scrabble_Tile_Blank.jpg" class="scrabbleBoard normal" boardPos ="0" alt="blanktile1"> 
+        <img id="normal2" src="./alltiles/Scrabble_Tile_Blank.jpg" class="scrabbleBoard normal" boardPos ="1" alt="blanktile2"> 
+        <img id="doubleWord3" src="./alltiles/Scrabble_Tile_Blank.jpg" class="scrabbleBoard doubleWord" boardPos ="2"alt="blanktile3"> 
+        <img id="normal4" src="./alltiles/Scrabble_Tile_Blank.jpg" class="scrabbleBoard normal" boardPos ="3" alt="blanktile4">
+        <img id="normal5" src="./alltiles/Scrabble_Tile_Blank.jpg" class="scrabbleBoard normal" boardPos ="4" alt="blanktile5"> 
+        <img id="normal6" src="./alltiles/Scrabble_Tile_Blank.jpg" class="scrabbleBoard normal" boardPos ="5" alt="blanktile6"> 
+        <img id="doubleLetter7" src="./alltiles/Scrabble_Tile_Blank.jpg" class="scrabbleBoard doubleLetter"  boardPos ="6" alt="blanktile7"> 
+        <img id="normal8" src="./alltiles/Scrabble_Tile_Blank.jpg" class="scrabbleBoard normal" boardPos ="7" alt="blanktile8"> 
+        <img id="doubleLetter9" src="./alltiles/Scrabble_Tile_Blank.jpg" class="scrabbleBoard doubleLetter"  boardPos ="8" alt="blanktile9">
+        <img id="normal10" src="./alltiles/Scrabble_Tile_Blank.jpg" class="scrabbleBoard normal" boardPos ="9" alt="blanktile10">
+        <img id="normal11" src="./alltiles/Scrabble_Tile_Blank.jpg" class="scrabbleBoard normal" boardPos ="10" alt="blanktile12">
+        <img id="normal12" src="./alltiles/Scrabble_Tile_Blank.jpg" class="scrabbleBoard normal" boardPos ="11" alt="blanktile13">
+        <img id="doubleWord13" src="./alltiles/Scrabble_Tile_Blank.jpg" class="scrabbleBoard doubleWord" boardPos ="12" alt="blanktile14">
+        <img id="normal14" src="./alltiles/Scrabble_Tile_Blank.jpg" class="scrabbleBoard normal" boardPos ="13" alt="blanktile14">
+        <img id="normal15" src="./alltiles/Scrabble_Tile_Blank.jpg" class="scrabbleBoard normal" boardPos ="14" alt="blanktile15">
+      </div>
+    </div>
+    <div id="emptyTileRack">
+      <img id="blankRack" src="scrabble-tile-holder-406774_640.png" class="tileHolder">
+      <div id="gridForRackAndPlayer">
+      <!--Init all the the players tiles *will be drawn in scrabble.js-->
+      <img id="tile1" class="draggable" alt="tile1">
+      <img id="tile2" class="draggable" alt="tile2">
+      <img id="tile3" class="draggable" alt="tile3">
+      <img id="tile4" class="draggable" alt="tile4">
+      <img id="tile5" class="draggable" alt="tile5">
+      <img id="tile6" class="draggable" alt="tile6">
+      <img id="tile7" class="draggable" alt="tile7">
+
+      </div>
+      
+    </div>
+  </div>
+</body>
+
+<!--ALL SCRIPTS GO HERE-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="./scrabble.js"></script>
+
+
+</html>
